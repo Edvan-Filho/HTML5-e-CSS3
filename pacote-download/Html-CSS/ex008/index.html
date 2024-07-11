@@ -3,39 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href= "favicon.ico" type="image/x-icon">
-    <title>Formatação de Textos</title>
-    <style>
-        mark {
-            background-color: chartreuse;
-        }
+   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Outras formatações</title>
 
 
-    </style>
 </head>
 <body>
-    <h1>Principais formatações</h1>
-    <h2>Negritos/Destaque </h2>
-    <p>Nessa frase temos <b> termo em negrito </b> usando a tag &lt;b&gt; <br> (não é semântica, só possui forma) </p>
-<p>Nessa frase temos <strong>termo em destaque</strong> usando o Strong <br>(semântica, possui sgnificado) </p>
-<h2>Itálico/Ênfase</h2>
-<p>Agora vamos colocar <i>em itálico usando</i> a tag &lt;i&gt; <br>(Não semântica)</p>
-<p>Agora vamos colocar<em> em ênfase usando</em> a tag EM <br>(semântica)</p>
+<h1>Outras Formatações</h1>
+    <h2>Código Fonte</h2>
+    <p>Documento monoespaçado, onde cada letra tem a <code>mesma distancia da outra</code></p>
 
-<h2>Texto marcado</h2>
+    <pre>
+        <code>
+num = int(input('Digite um numero'))
 
-<p>Também temos a tag mark que é para<mark> marcar o texto com a cor padrão de amarelo</mark></p>
+    if num % 2 = 0:
+        print ('Esse numero é par')
+    else:
+        print('Esse numero é ímpar')
+        </code>
+    </pre>
+  
+    <h2>Citações Simples</h2>
 
-<p>Você pode mudar <mark style="background-color: aqua;"> a cor da marcação</mark>, mas terá que usar o Css</p>
- 
-<p>E caso você queira deixar uma cor padrão em uma página, é só colocar na parte da cabeça em HTML</p>
-    
-<h2>Texto sobrescrito</h2>
-<p>x<sup>2</sup> +3x + 8</p>
+    <p>Como dizia o pai de um amigo do Guanabara:<q> O computador é um burro muito rápido.</q></p>
 
-<h2>Texto subscrito</h2>
-<p>H<sub>2</sub>0</p>
+    <h2>Citações Completas</h2>
+    <blockquote>
+        "Os primeiros 90% do código representam os primeiros 10% do tempo de desenvolvimento. Os 10% restantes representam os 90% restantes do tempo." - Brian Kernighan e Dennis Ritchie, <cite><a href="https://www.amazon.com/Programming-Language-2nd-Brian-Kernighan/dp/0131103628" title="A linguagem de programação C">A linguagem de programação C</a></cite>
+      </blockquote>
+
+      <h2>Abreviações</h2>
+      <p>Temos  <abbr title=" HyperText Markup Language (Linguagem de Marcação de Hipertexto)">HTML</abbr> e Temos <abbr title="Cascading Style Sheets (Folhas de Estilo em Cascata)">CSS</abbr> que não são linguagens de programação</p>
+
+      <h2>Texto Invertido</h2>
+      <p><bdo dir="rtl">Esse texto está ivertido, mas e essa palavra? arara</bdo> </p>
+
 </body>
-
-
 </html>
